@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../style/config.js"></script>
+    <script src="../js/navbar.js"></script>
+    <link rel="stylesheet" href="../css/animacao.css">
+    <title>Orientadores Disponíveis</title>
+</head>
+<body>
+    <head>
+        <nav class="bg-nav h-14 relative">
+            <div class="absolute left-1 inset-y-1">
+                <i class="bi bi-list size-8 text-white text-3xl" id="ativar"></i>
+            </div>
+            <div class="absolute right-1 inset-y-2">
+                <div class="rounded-full bg-slate-300 h-10 w-10 hover:opacity-30 relative">
+                    <div class="absolute inset-0 bg-black opacity-0 transition-opacity hover:opacity-30 rounded-full w-10 h-10"></div>
+                </div>
+            </div>
+        </nav>
+    </head>
+    <main class="flex">
+        <div class="flex flex-col items-center bg-nav d-block h-screen max-h-full text-center text-white w-0" id="navbar">
+            <a href="#" class="mt-2">
+                <img src="../img/grupo.png" alt="icone grupo" class="size-10" >
+            </a>
+            <a href="#" class="mb-3">Grupo</a>
+            <a href="#" class="mt-3">
+                <img src="../img/chat.png" alt="icone grupo" class="h-10 w-10" >
+            </a>
+            <a href="#" class="mb-3">Chat</a>
+            <a href="#" class="mt-3">
+                <img src="../img/PA.png" alt="icone grupo" class="h-10 w-10" >
+            </a>
+            <a href="#" class="mb-3">Plano adaptativo</a>
+            <a href="#" class="mt-3">
+                <img src="../img/atribuicao.png" alt="icone grupo" class="h-10 w-10" >
+            </a>
+            <a href="#" class="mb-3">Atribuições</a>
+            <a href="#" class="mt-3">
+                <img src="../img/Ajuda.png" alt="icone grupo" class="h-10 w-10" >
+            </a>
+            <a href="#" class="mb-3">Ajuda</a>
+        </div>
+        <div class="">
+        <section class="flex justify-center flex-wrap">
+            <div class="text-center	" style="width: 100%;">
+                <div class="text-3xl font-bold mt-3">Orientadores Disponíveis</div><br>
+                <div><input type="search" id="procurarOrientador" placeholder="Procurar..." class="size-4/5 border-b-2 border-black p-2 pb-1 mb-8 text-1.5xl"></input></div>
+            </div>
+            
+            <div class="bg-azul2 flex p-6 size-4/5 rounded-lg items-start h-40 mb-8 border-2 border-nav drop-shadow-xl">
+                <div class="h-full m-0 pr-8 flex-shrink-0 flex items-center">
+                    <a href="./conviteorientação.html">
+                    <div class="rounded-full bg-slate-300 size-32 hover:opacity-30 relative">
+                        <div class="absolute inset-0 bg-black opacity-0 transition-opacity hover:opacity-30 rounded-full size-32"></div>
+                    </div>
+                    </a>
+                </div>
+                <div class="m-0 pl-8 flex-grow flex flex-col justify-start">
+                    <p class="text-1.5xl font-medium">Nome Orientador</p>
+                    <p class="font-medium">Curso e Materia</p>
+                </div>
+                <div class="m-0 flex-grow flex flex-col justify-start">
+                    <p class="font-medium">Dias disponível: seg., ter., qua., qui., sex</p><br>
+                    <p class="font-medium">Disponibilidade de horário: 00hrs até 00hrs</p>
+                </div>
+                <div class="h-full flex-shrink-0 pr-8 flex items-center">
+                    <a href="./conviteorientação.html">
+                        <button class="bg-white text-1.5xl py px-3 rounded-lg text-nav font-medium border-2 border-nav hover:bg-slate-100 hover:font-bold">Convidar</button>
+                    </a>
+                </div>
+            </div>
+            
+            
+        </section>
+
+    </main>
+    <footer></footer>
+</body>
+</html>
